@@ -1,38 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
+    /* Box Model */
     margin: 0;
+    /* Visuals */
     background-color: #222;
 }
 
 hr {
+    /* Box Model */
     margin: 0;
+    /* Typography */
     color: white;
 }
 
 h1 {
+    /* Typography */
     color: white;
 }
 
 h2 {
+    /* Typography */
     color: white;
 }
 
 h6 {
+    /* Typography */
     color: white;
 }
 
 a {
+    /* Typography */
     color: white;
     text-decoration: none;
 }
 
 .main-wrapper {
+    /* Box Model */
     width: 100%;
     max-width: 1440px;
     min-height: 50vh;
     margin: 0 auto;
     padding: 12px 12px;
+    /* Visuals */
     background-image: linear-gradient(rgba(70, 70, 70, 0.5), rgba(70, 70, 70, 0.5));
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -41,47 +51,62 @@ a {
 }
 
 .section {
-    background-color: #7b1113;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, .3);
-    display: block;
+    /* Positioning */
     position: static;
+    /* Box Model */
+    display: block;
     max-width: calc(100% - 30px);
     max-height: 1080px;
     margin: 15px;
     padding: 20px 15px;
+    /* Visuals */
+    background-color: #7b1113;
     border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .3);
 }
 
 .section-row {
+    /* Box Model */
     display: flex;
     flex-wrap: wrap;
     gap: 25px 0;
     margin-top: 15px;
+    /* Typography */
     font-family: "Google Sans Code";
 }
 
 .row-container {
+    /* Positioning */
+    position: relative;
+    /* Box Model */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 0;
-    position: relative;
     margin: 0 10px;
 }
 
 .item-container {
+    /* Positioning */
+    position: relative;
+    /* Box Model */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 10px 10px;
-    position: relative;
-    margin: 0 10px;
+    flex: 0 0 98%;
+    gap: 10px 2%;
+    margin: 0 1%;
+    box-sizing: border-box;
+    /* Typography */
+    overflow-wrap: break-word;
 }
 
 .container-label {
+    /* Positioning */
     position: absolute;
     top: -18px;
     left: 0;
+    /* Typography */
     font-size: 10px;
     font-weight: 500;
     color: #ccc;
@@ -91,60 +116,76 @@ a {
 }
 
 .container-option-filter {
+    /* Positioning */
+    position: relative;
+    /* Box Model */
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     min-width: 18px;
     min-height: 18px;
     margin: 0;
     padding: 10px;
-    background-color: #333;
-    cursor: pointer;
-    border: 1px solid #aaa;
+    /* Typography */
     font-weight: 700;
     color: #fff;
     white-space: nowrap;
+    /* Visuals */
+    background-color: #333;
+    border: 1px solid #aaa;
+    cursor: pointer;
 }
 
-.container-option-filter input {
-    display: none;
-}
+    .container-option-filter input {
+        /* Box Model */
+        display: none;
+    }
 
 .item {
+    /* Positioning */
+    position: relative;
+    /* Box Model */
     display: none;
     justify-content: center;
     align-items: center;
-    position: relative;
-    width: 200px;
-    height: 50px;
+    flex: 0 0 15%;
     margin: 0;
     padding: 10px;
-    background-color: #333;
-    cursor: pointer;
-    border: 1px solid #aaa;
+    box-sizing: border-box;
+    /* Typography */
     font-weight: 700;
     color: #fff;
-    white-space: nowrap;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    /* Visuals */
+    background-color: #333;
+    border: 1px solid #aaa;
+    cursor: pointer;
 }
 
-/*Suffixes*/
+/* Suffixes */
 
 .show {
+    /* Box Model */
     display: flex;
 }
 
 .hide {
+    /* Box Model */
     display: none;
 }
 
 .selected {
+    /* Visuals */
     background-color: #aaa;
 }
 
 .center {
+    /* Box Model */
     display: block;
     width: 25%;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
 }
