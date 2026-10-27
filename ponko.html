@@ -90,7 +90,7 @@
                 element.innerText = "Copied!";
                 setTimeout(function () { element.innerText = item.name; }, 800);
             } else {
-                window.location.href = item.text;
+                window.open(item.text, '_blank');
             }
         }
 

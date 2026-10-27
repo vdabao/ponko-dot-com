@@ -14,7 +14,6 @@ function clickButton(buttonID) {
     }
 }
 
-//STILL BUGGED FOR MULTIPLE KEYWORDS
 function clickFilter(buttonID) {
     clickButton(buttonID);
     let items = document.getElementsByClassName("item");
