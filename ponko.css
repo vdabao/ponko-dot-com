@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    background-color: #222;
+}
+
+hr {
+    margin: 0;
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+h6 {
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    min-height: 50vh;
+    margin: 0 auto;
+    padding: 12px 12px;
+    background-image: linear-gradient(rgba(70, 70, 70, 0.5), rgba(70, 70, 70, 0.5));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+}
+
+.section {
+    background-color: #7b1113;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .3);
+    display: block;
+    position: static;
+    max-width: calc(100% - 30px);
+    max-height: 1080px;
+    margin: 15px;
+    padding: 20px 15px;
+    border-radius: 20px;
+}
+
+.section-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 0;
+    margin-top: 15px;
+    font-family: "Google Sans Code";
+}
+
+.row-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0;
+    position: relative;
+    margin: 0 10px;
+}
+
+.item-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 10px;
+    position: relative;
+    margin: 0 10px;
+}
+
+.container-label {
+    position: absolute;
+    top: -18px;
+    left: 0;
+    font-size: 10px;
+    font-weight: 500;
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    white-space: nowrap;
+}
+
+.container-option-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-width: 18px;
+    min-height: 18px;
+    margin: 0;
+    padding: 10px;
+    background-color: #333;
+    cursor: pointer;
+    border: 1px solid #aaa;
+    font-weight: 700;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.container-option-filter input {
+    display: none;
+}
+
+.item {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin: 0;
+    padding: 10px;
+    background-color: #333;
+    cursor: pointer;
+    border: 1px solid #aaa;
+    font-weight: 700;
+    color: #fff;
+    white-space: nowrap;
+}
+
+/*Suffixes*/
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+.selected {
+    background-color: #aaa;
+}
+
+.center {
+    display: block;
+    width: 25%;
+    margin-right: auto;
+    margin-left: auto;
+}
